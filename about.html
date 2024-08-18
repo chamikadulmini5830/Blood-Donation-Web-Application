@@ -1,0 +1,143 @@
+<html>
+<!--Head Section-->
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About-Us</title>
+    
+    <!--FavIcon-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--BootStrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--RightClickDisable-->
+    <script src="js/RightClickDisable.js"></script>
+
+</head>
+<!--End of Head Section-->
+
+<body>
+
+
+
+
+<!--Navigation-->
+<header>
+    <div class="logo">Save Hearts</div>
+
+    <div class="titles">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <nav class="nav-bar">
+        <ul class="navList">
+            <li> <a href="index.html" style="text-decoration: none;" > Home </a></li>
+            <li> <a href="about.html" class="active" style="text-decoration: none;"> About </a></li>
+            <li> <a href="services.html" style="text-decoration: none;"> Services </a></li>
+            <li> <a href="contact.html" style="text-decoration: none;"> Contact </a></li>
+            <li> <a href="login.php" style="text-decoration: none;"> Login </a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    titles = document.querySelector(".titles");
+    titles.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+<!--End of Navigation-->
+
+
+
+
+
+
+
+<div  class="heading">
+    <h1>About Us</h1>
+    <p>At <b><u>Save Hearts</u></b> we are committed to saving lives by providing safe, high-quality blood and blood products to patients in need. We are a nonprofit organization that relies on the generosity of volunteer donors to meet the needs of our community.
+        Every two seconds, someone in the United States needs blood. Blood is used to treat a wide variety of medical conditions, including cancer, sickle cell anemia, and trauma. There is no substitute for human blood, and it is essential for patient care.
+        We are proud to offer a convenient and safe way to donate blood. We have blood donation centers located throughout the community, and we also offer mobile blood drives. We make it easy for donors to give back to their community and save lives.
+        We are grateful to our volunteer donors for their continued support. Your donation makes a difference.</p>
+</div>
+<div class="continer">
+    <section class="about">
+        <div class="about-image">
+            <img src="images/about1.png" alt="about">
+        </div>
+        <div class="about-content">
+
+            <h2>Our Mission</h2>
+            <p>To provide safe, high-quality blood and blood products to patients in need.</p>
+            
+            <h2>Our Vision</h2>
+            <p>To be the leading provider of blood and blood products in our community.</p>
+
+            <h2>Our Values</h2>
+            <ul>
+                <li>Compassion: We care about our patients, donors, and employees.</li>
+                <li>Integrity: We are honest and trustworthy.</li>
+                <li>Excellence: We strive to achieve the highest standards of quality.</li>
+                <li>Innovation: We are always looking for new ways to improve our services.</li>
+                <li>Teamwork: We work together to achieve our goals.</li>
+            </ul>
+
+            <h2>How You Can Help</h2>
+            <ul>
+                <li>Donate blood. The need for blood is constant. You can donate blood every 56 days.</li>
+                <li>Encourage others to donate blood. Spread the word about the importance of blood donation.</li>
+                <li>Volunteer your time. We need volunteers to help with a variety of tasks, such as greeting donors, processing donations, and educating the public about blood donation.</li>
+                <li>Make a donation. Your donation will help us provide safe, high-quality blood and blood products to patients in need.</li>
+            </ul>
+            <p>Thank you for your support. Together, we can save lives.</p>
+            <br>
+            <br>
+        </div>
+    </section>
+</div>
+
+
+
+<!--Footer-->
+<footer>
+    <div class="bs-example">
+        <div class="bg d-flex justify-content-between">
+
+            <div class="margin">
+                <div>&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. by SDHC Software Solutions.</div>
+            </div>
+            <!-- Date and Time -->
+            <div class="Date">
+                <div>
+                    <script>
+                        document.write("Date : ");document.write(new Date().getFullYear());document.write(" - ");
+                        document.write(new Date().getMonth()+1);document.write(" - ");
+                        document.write(new Date().getDate());
+                        document.write("    |    ");
+                        document.write("Time : ");document.write(new Date().getHours());document.write(" : ");
+                        document.write(new Date().getMinutes());document.write(" : ");
+                        document.write(new Date().getSeconds());
+                     </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+</body>
+</html>

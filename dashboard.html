@@ -1,0 +1,103 @@
+<html>
+<!--Head Section-->
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+    
+    <!--FavIcon-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+
+    <!--BootStrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    
+    <!--JavaScript-->
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/RightClickDisable.js"></script>
+
+</head>
+<!--End of Head Section-->
+
+<body>
+
+    <aside class="sidebar">
+
+        <div id="leftside-navigation" class="nano">
+
+          <ul class="nano-content">
+
+            <div class="tab">
+
+            <li class="menu">
+                <div class="a"><i class="fa fa-dashboard"></i><button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><span>Dashboard</span></button></div>
+            </li>
+
+            <li class="sub-menu">
+                <div class="a"><i class="fa fa-network-wired"></i><button class="tablinks" onclick="openCity(event, 'Paris')"><span>Paris</span></button></div>
+            </li>
+
+            <li class="sub-menu">
+                <div class="a"><i class="fa-solid fa-house-medical"></i><button class="tablinks" onclick="openCity(event, 'Tokyo')"><span>Tokyo</span></button></div>
+            </li>
+
+            <li class="sub-menu">
+                <div class="a"><i class="fa fa fa-tasks"></i><span>Forms</span></div>
+            </li>
+
+            <li class="sub-menu ">
+                <div class="a"><i class="fa fa-envelope"></i><span>Mail</span></div>
+            </li>
+
+            <li class="sub-menu">
+                <div class="a"><i class="fa fa-bar-chart"></i><span>Charts</span></div>
+            </li>
+
+            <li class="sub-menu">
+                <div class="a"><i class="fa fa-map-marker"></i><span>Maps</span></div>
+            </li>
+
+            <li class="sub-menu">
+              <div class="a"><i class="fa fa-text-height"></i><span>Typography</span></div>
+            </li>
+
+            <li class="sub-menu">
+                <div class="a"><i class="fa fa-file"></i><span>Pages</span></div>
+            </li>
+        
+           </div>
+          </ul>
+        </div>
+      </aside>
+
+      <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p> 
+      </div>
+
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+      
+      <script src="js/dashboard.js"></script>
+
+</body>
+</html>

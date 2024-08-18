@@ -1,0 +1,164 @@
+<html>
+<!--Head Section-->
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact-Us</title>
+    
+    <!--FavIcon-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--BootStrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--RightClickDisable-->
+    <script src="js/RightClickDisable.js"></script>
+
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+<!--End of Head Section-->
+
+<body>
+
+
+
+
+<!--Navigation-->
+<header>
+    <div class="logo">Save Hearts</div>
+
+    <div class="titles">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <nav class="nav-bar">
+        <ul class="navList">
+            <br>
+            <li> <a href="index.html" style="text-decoration: none;"> Home </a></li>
+            <li> <a href="about.html" style="text-decoration: none;"> About </a></li>
+            <li> <a href="services.html" style="text-decoration: none;"> Services </a></li>
+            <li> <a href="contact.html" class="active" style="text-decoration: none;"> Contact </a></li>
+            <li> <a href="login.php" style="text-decoration: none;"> Login </a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    titles = document.querySelector(".titles");
+    titles.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+<!--End of Navigation-->
+
+<section class="contact">
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>We are always looking for ways to improve our blood donation system. If you have any questions, comments, or suggestions, please don't hesitate to contact us.</p>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="text"> 
+                    <h3>Address</h3>
+                    <p>No:74/1A , <br>Prison Road, Kaluwella, <br>Galle, 80000,<br>Sri Lanka.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="text"> 
+                    <h3>Phone</h3>
+                    <p>+94-746-281-609</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="text"> 
+                    <h3>Email</h3>
+                    <p>save.hearts2023@gmail.com</p>
+                </div>
+            </div>
+            </div>
+            <div class="contactForm">
+                <form action="https://formsubmit.co/e36efc546d03f056d4599e0eeed8430b" method="POST">
+                    <h2>Send Message</h2>
+
+                    <div class="inputBox">
+                        <input type="text" id="name" name="Name" required>
+                        <span>Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="email" id="email" name="Email" required>
+                        <span>Email</span>
+                    </div>
+
+                    <input type="hidden" name="_subject" value="Save Hearts - Blood Donation System">
+
+                    <div class="inputBox">
+                        <textarea name="Message" id="msg" required></textarea>
+                        <span>Message</span>
+                    </div>
+
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="inputBox">
+                        <button type="submit">Send</button>
+                    </div>
+
+                    <input type="hidden" name="_next" value="https://savehearts.000.pe/thanks.html">
+
+                </form>
+            </div>
+    </div>
+</section>
+
+
+
+<!--Footer-->
+<footer>
+    <div class="bs-example">
+        <div class="bg d-flex justify-content-between">
+
+            <div class="margin">
+                <div>&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. by SDHC Software Solutions.</div>
+            </div>
+            <!-- Date and Time -->
+            <div class="Date">
+                <div>
+                    <script>
+                        document.write("Date : ");document.write(new Date().getFullYear());document.write(" - ");
+                        document.write(new Date().getMonth()+1);document.write(" - ");
+                        document.write(new Date().getDate());
+                        document.write("    |    ");
+                        document.write("Time : ");document.write(new Date().getHours());document.write(" : ");
+                        document.write(new Date().getMinutes());document.write(" : ");
+                        document.write(new Date().getSeconds());
+                     </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

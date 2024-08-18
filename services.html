@@ -1,0 +1,135 @@
+<html>
+<!--Head Section-->
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services</title>
+    
+    <!--FavIcon-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--BootStrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--RightClickDisable-->
+    <script src="js/RightClickDisable.js"></script>
+
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+<!--End of Head Section-->
+
+<body>
+
+
+
+
+<!--Navigation-->
+<header>
+    <div class="logo">Save Hearts</div>
+
+    <div class="titles">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <nav class="nav-bar">
+        <ul class="navList">
+            <li> <a href="index.html" style="text-decoration: none;"> Home </a></li>
+            <li> <a href="about.html" style="text-decoration: none;"> About </a></li>
+            <li> <a href="services.html" class="active" style="text-decoration: none;"> Services </a></li>
+            <li> <a href="contact.html" style="text-decoration: none;"> Contact </a></li>
+            <li> <a href="login.php" style="text-decoration: none;"> Login </a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    titles = document.querySelector(".titles");
+    titles.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+<!--End of Navigation-->
+
+
+  
+<div class="container">
+    <h1>Our Services</h1>
+    <div class="rows">
+        <div class="service">
+            <i class="fa-solid fa-gift"></i>
+            <h2>Blood Donation</h2>
+            <p>Allows people to donate blood, which can then be used to save lives.</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-users"></i>
+            <h2>Registration</h2>
+            <p>This service allows people to register to donate blood. This helps to ensure that there is a sufficient supply of blood available when needed.</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h2>Scheduling</h2>
+            <p>This service allows people to schedule appointments to donate blood. This helps to make the donation process more convenient for donors.</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-timeline"></i>
+            <h2>Tracking</h2>
+            <p>This service allows people to track their blood donation history. This can be helpful for donors who want to make sure that they are donating blood regularly.</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2>Blood Donation Education</h2>
+            <p>This service provides information about blood donation, including the benefits of donating blood, the requirements for donating blood, and the risks associated with donating blood.</p>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-person-chalkboard"></i>
+            <h2>Advocacy</h2>
+            <p>This service works to raise awareness about the importance of blood donation and to encourage people to donate blood.</p>
+        </div>
+    </div>
+</div>
+
+
+            
+<!--Footer-->
+<footer>
+    <div class="bs-example">
+        <div class="bg d-flex justify-content-between">
+
+            <div class="margin">
+                <div>&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. by SDHC Software Solutions.</div>
+            </div>
+            <!-- Date and Time -->
+            <div class="Date">
+                <div>
+                    <script>
+                        document.write("Date : ");document.write(new Date().getFullYear());document.write(" - ");
+                        document.write(new Date().getMonth()+1);document.write(" - ");
+                        document.write(new Date().getDate());
+                        document.write("    |    ");
+                        document.write("Time : ");document.write(new Date().getHours());document.write(" : ");
+                        document.write(new Date().getMinutes());document.write(" : ");
+                        document.write(new Date().getSeconds());
+                     </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

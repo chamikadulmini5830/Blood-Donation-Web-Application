@@ -1,0 +1,128 @@
+<html>
+<!--Head Section-->
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Save Hearts - Blood Donation System</title>
+    
+    <!--FavIcon-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--BootStrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--RightClickDisable-->
+    <script src="js/RightClickDisable.js"></script>
+
+</head>
+<!--End of Head Section-->
+
+<body>
+
+
+
+<!--Navigation-->
+<header>
+    <div class="logo">Save Hearts</div>
+
+    <div class="titles">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <nav class="nav-bar">
+        <ul class="navList">
+            <li> <a href="index.html" class="active" style="text-decoration: none;"> Home </a></li>
+            <li> <a href="about.html" style="text-decoration: none;" > About </a></li>
+            <li> <a href="services.html" style="text-decoration: none;" > Services </a></li>
+            <li> <a href="contact.html" style="text-decoration: none;"> Contact </a></li>
+            <li> <a href="login.php" style="text-decoration: none;"> Login </a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    titles = document.querySelector(".titles");
+    titles.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+<!--End of Navigation-->
+
+
+
+<section class="hero">
+    <div class="background-image" style="background-image: url(images/index1.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center;"></div>
+        <div class="hero-content-area">
+        <h1>Save Hearts</h1>
+        <h3>Be the reason for someone’s heartbeat.</h3>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+</section>
+
+<section class="s1">
+<h3 class="title">Importance of Blood Donation:</h3>
+    <p> It can help save lives and improve the health of others. 
+        Donating blood can offer information about our general health and improve blood flow. 
+        It also helps purify triglycerides and reduces the risk of heart attacks and cardiovascular accidents. 
+        Donating blood stimulates the production of new blood cells in the body and balances iron levels in the blood. 
+        In addition to these benefits, donating blood regularly has some great benefits for your heart’s health. 
+        It can help lower your blood pressure and reduce the chances of having a heart attack. 
+        If your hemoglobin is too high, donating blood can actually make it less thick and sticky. 
+        This is important because thick blood can lead to blood clots, heart attacks, and strokes.</p>
+    <hr>
+   
+</section>
+
+<section class="s2">
+<h3 class="title">14 June is World Blood Donor Day</h3>	
+<p>Every year countries around the world celebrate World Blood Donor Day (WBDD). 
+    The event serves to raise awareness of the need for safe blood and blood products and to thank voluntary, unpaid blood donors for their life-saving gifts of blood.</p>
+<p>A blood service that gives patients access to safe blood and blood products in sufficient quantity is a key component of an effective health system. 
+    The global theme of World Blood Donor Day changes each year in recognition of the selfless individuals who donate their blood for people unknown to them.</p>
+<hr>
+
+</section>
+
+
+
+<!--Footer-->
+<footer>
+    <div class="bs-example">
+        <div class="bg d-flex justify-content-between">
+
+            <div class="margin">
+                <div>&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. by SDHC Software Solutions.</div>
+            </div>
+            <!-- Date and Time -->
+            <div class="Date">
+                <div>
+                    <script>
+                        document.write("Date : ");document.write(new Date().getFullYear());document.write(" - ");
+                        document.write(new Date().getMonth()+1);document.write(" - ");
+                        document.write(new Date().getDate());
+                        document.write("    |    ");
+                        document.write("Time : ");document.write(new Date().getHours());document.write(" : ");
+                        document.write(new Date().getMinutes());document.write(" : ");
+                        document.write(new Date().getSeconds());
+                     </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
